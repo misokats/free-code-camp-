@@ -5,7 +5,7 @@
 
 def is_balanced(s):
     #母音の集合を定義
-    vowels = set("auiouAUIOU")
+    vowels = set("aeuioAEUIO")
 
     #文字列の長さを半分にする
     n = len(s)
@@ -19,6 +19,6 @@ def is_balanced(s):
     def count_vowels(text):
         return sum(1 for char in text if char in vowels)
 
-    ＃文字列の前半と後半の母音数がイコールか？
-    if count_vowels(first_half) == count_vowels(second_half)
-    return s
+    #文字列の前半と後半の母音数がイコールか？
+    return count_vowels(first_half) == count_vowels(second_half)
+   
