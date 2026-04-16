@@ -13,12 +13,11 @@ def is_balanced(s):
 
     #スライスで文字列の前半と後半をそれぞれ取得
     first_half = s[:half_len] #0から文字数/2-1まで
-    second_len = s[n-half_len:] #文字列の後ろから半分まで
+    second_half = s[n-half_len:] #文字列の後ろから半分まで
 
     #母音数をカウント
     def count_vowels(text):
         return sum(1 for char in text if char in vowels)
 
     #文字列の前半と後半の母音数がイコールか？
-    return count_vowels(first_half) == count_vowels(second_half)
-   
+    return count_vowels(first_half) == count_vowels(second_half)   
